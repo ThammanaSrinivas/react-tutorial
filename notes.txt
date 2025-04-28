@@ -1,0 +1,108 @@
+REACT
+
+https://www.youtube.com/watch?v=SqcY0GlETPk
+
+Intro
+- javascript library
+- by facebook
+- components : instead of managing complex DOM, manage components react will take care of DOM
+
+
+Creating React App
+- Create React App (CRA)
+- Vite { Much faster than CRA, only loads what is necessary instead of front loading everything }
+- P.S using Vite we can create typescript based react app
+
+
+Creating a components
+- .tsx -> for react component { whereas .ts is for plain typescript files }
+- using "class" or "javascript function"
+    - function is more consise, preferred and recommended
+- naming convention : PascalCasing
+- HTML code in tsx is not HTML but JSX -> Javascript XML under the hood { like JSP }
+- https://babeljs.io/repl { for JSX code }
+- sample JSX code
+import { jsx as _jsx } from "react/jsx-runtime";
+/*#__PURE__*/_jsx("h1", {
+  children: "hello"
+});
+- For creating multiple divs / jsx tags / html we can
+    - use outer div -> but unnecessary creation of div by react
+    - use framements -> in react library
+        - either with fragment keyword or empty brackets
+
+
+
+HOW DOES REACT WORK ?
+- It uses something called virtual DOM -> a light weight DOM
+- when a change occurs it reflects on only the nodes that changes in virtual DOM
+    - This is done by REACT-DOM library
+    - For mobile apps REACT-NATIVE
+
+
+- React is a tool to build interactive and dynamic web applications
+- for mordern websites we need more tools for
+    - Routing
+    - Http Calls
+    - Internationalisation
+    - Managing app state
+    - Form validation
+    - Animations
+
+
+- Bootstrap -> for styling applications
+    - get from "getbootstrap.com"
+
+
+Bootstrap vs Tailwind CSS
+Bootstrap is better for rapid development, prototyping, and if you want a framework with pre-built, customizable components.
+Tailwind CSS is better for creating unique, custom designs with full control over the styling and layout, and is often more efficient in terms of file size.
+
+
+ES7 extenstion for the shortcut "rafce" => for quick creation of react components
+
+
+RENDERING
+- javascript code in curly braces {}
+
+EVENTS
+- onClick property
+- provide a function with or without event parameter
+
+MANAGING STATE
+- when you update a variable based on an event the DOM won't render / the component won't re-render
+- So "useState(-1)" is used so that react can manage re-rendering of components
+- Each component has its own state, if i use 2 list groups of duplicates, each of them have different states
+
+
+
+
+PASSING INPUTS TO COMPONENTS VIA PROMPTS
+- To make components reusable -> inputs to components
+
+PASSING FUNCTIONS VIA PROMPTS
+- To make components interactive -> functions to components
+- Usecase : parent component to know what item is clicked
+
+STATE VS PROPS
+- State : managed by component
+- Props : passed from parent
+- props are immutable but state is mutable
+- muting props is anti pattern in REACT
+
+PASSING CHILDREN TO COMPONENTS
+- instead of props for passing as input we can pass the content of the tag
+- usecase : passing HTML content in prop is not practical
+- there is a special prop called "children" -> its the content of tag
+- for a complex content or generic content -> ReactNode ( anything that react can render )
+
+
+For Development + Debugging => React Dev Tools Browser Extension
+- Components and Profiler Tab
+
+
+My Questions?
+1. why not id / class for each div be component name and code like that ?
+    - would that be same ?
+    - or only the ease of use and optimisations would be missing ?
+2. React is feeling clumsy as its like mixing jsp and java
