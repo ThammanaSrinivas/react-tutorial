@@ -1,20 +1,19 @@
 REACT
-
 https://www.youtube.com/watch?v=SqcY0GlETPk
 
-Intro
+INTRO
 - javascript library
 - by facebook
 - components : instead of managing complex DOM, manage components react will take care of DOM
 
 
-Creating React App
+CREATING REACT APP
 - Create React App (CRA)
 - Vite { Much faster than CRA, only loads what is necessary instead of front loading everything }
 - P.S using Vite we can create typescript based react app
 
 
-Creating a components
+CREATING COMPONENTS
 - .tsx -> for react component { whereas .ts is for plain typescript files }
 - using "class" or "javascript function"
     - function is more consise, preferred and recommended
@@ -55,11 +54,11 @@ HOW DOES REACT WORK ?
 
 
 Bootstrap vs Tailwind CSS
-Bootstrap is better for rapid development, prototyping, and if you want a framework with pre-built, customizable components.
-Tailwind CSS is better for creating unique, custom designs with full control over the styling and layout, and is often more efficient in terms of file size.
+- Bootstrap is better for rapid development, prototyping, and if you want a framework with pre-built, customizable components.
+- Tailwind CSS is better for creating unique, custom designs with full control over the styling and layout, and is often more efficient in terms of file size.
 
 
-ES7 extenstion for the shortcut "rafce" => for quick creation of react components
+- ES7 extenstion for the shortcut "rafce" => for quick creation of react components
 
 
 RENDERING
@@ -103,6 +102,6 @@ For Development + Debugging => React Dev Tools Browser Extension
 
 My Questions?
 1. why not id / class for each div be component name and code like that ?
-    - would that be same ?
-    - or only the ease of use and optimisations would be missing ?
+    - The ease of use and optimisations would be missing
 2. React is feeling clumsy as its like mixing jsp and java
+    - Have to explore elegant and non cluttered complex component management

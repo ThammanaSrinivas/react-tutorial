@@ -4,7 +4,7 @@ import Button from "./components/Button";
 import ListGroup from "./components/ListGroup";
 
 function App() {
-  const items = ["Chennai", "Banglore", "Hyderabad", "delhi", "Vijayawada"];
+  const items = ["Chennai", "Bangalore", "Hyderabad", "Delhi", "Vijayawada"];
   const [throwAlert, setThrowAlert] = useState(false);
   const alert = () => {
     return (
